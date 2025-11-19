@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CryptoScamHunters</title>
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <style>
+    body {margin:0;font-family:system-ui,sans-serif;background:linear-gradient(135deg, #000 0%, #cc0000 100%);color:#fff;text-align:center;padding:30px;}
+    h1 {font-size:2.5em;color:#ff0066;margin:0;text-shadow:0 0 10px rgba(255,0,102,0.5);}
+    p {font-size:1.2em;max-width:300px;margin:20px auto;}
+    .btn {background:#ff0066;color:#fff;padding:18px 40px;font-size:1.3em;border:none;border-radius:16px;margin:30px auto;display:inline-block;box-shadow:0 8px 20px rgba(255,0,102,0.4);cursor:pointer;}
+    .warning {font-size:4em;margin:20px;color:#ffd700;}
+  </style>
+</head>
+<body>
+  <div class="warning">🔍⚠️</div>
+  <h1>CryptoScamHunters</h1>
+  <p>Europe's fastest-growing crypto scam alert channel</p>
+  <p><strong>5,000+ members hunting scammers & hackers daily</strong></p>
+  <button class="btn" onclick="Telegram.WebApp.openTelegramLink('https://t.me/CryptoScamHunters')">
+    JOIN CHANNEL NOW
+  </button>
+  <script>
+    Telegram.WebApp.ready();
+    Telegram.WebApp.expand();
+    Telegram.WebApp.MainButton.setText("START HUNTING").setColor("#ff0066").onClick(()=>Telegram.WebApp.openTelegramLink('https://t.me/CryptoScamHunters')).show();
+  </script>
+</body>
+</html>
